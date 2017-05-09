@@ -1,0 +1,32 @@
+{
+  "name": "rder",
+  "version": "0.0.0",
+  "description": "Create order from array.",
+  "main": "rder.deploy.js",
+  "support": "rder.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "create",
+    "order",
+    "array",
+    "rder"
+  ],
+  "homepage": "https://github.com/volkovasystems/rder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "doubt": "^0.26.0",
+    "protype": "^0.21.0",
+    "raze": "^0.29.0",
+    "stringe": "^0.3.0",
+    "truly": "^0.18.0"
+  }
+}

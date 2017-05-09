@@ -1,0 +1,45 @@
+{
+  "name": "rder",
+  "version": "0.0.0",
+  "description": "Create order from array.",
+  "main": "rder.js",
+  "support": "rder.support.js",
+  "deploy": "rder.deploy.js",
+  "browser": "rder.deploy.js",
+  "scripts": {
+    "build": "babel rder.js --out-file rder.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha rder-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/rder.git"
+  },
+  "keywords": [
+    "create",
+    "order",
+    "array",
+    "rder"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/rder/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/rder#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "doubt": "^0.26.0",
+    "protype": "^0.21.0",
+    "raze": "^0.29.0",
+    "stringe": "^0.3.0",
+    "truly": "^0.18.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.5.1"
+  }
+}
