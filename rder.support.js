@@ -85,7 +85,7 @@ var rder = function rder(array, point) {
 	}
 
 	return raze(array).reduce(function (order, element, index) {
-		if (truly(point)) {
+		if (truly(point) && truly(element[point])) {
 			order[element[point]] = index;
 
 		} else {

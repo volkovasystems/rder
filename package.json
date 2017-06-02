@@ -1,6 +1,6 @@
 {
   "name": "rder",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create order from array.",
   "main": "rder.js",
   "support": "rder.support.js",
@@ -40,6 +40,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.5.1"
+    "webpack": "^2.6.1"
   }
 }
