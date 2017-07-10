@@ -837,14 +837,11 @@ chokidar@^1.4.3, chokidar@^1.6.1:
     fsevents "^1.0.0"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/cipher-base/-/cipher-base-1.0.3.tgz#eeabf194419ce900da3018c207d212f2a6df0a07"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
   dependencies:
     inherits "^2.0.1"
-
-circular-json@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
+    safe-buffer "^5.0.1"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -1021,19 +1018,6 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-doubt@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.29.0.tgz#fba144c6c6eec11f86fb74df715db8d84700c984"
-  dependencies:
-    babel-runtime "^6.23.0"
-    cemento "^0.16.0"
-    circular-json "^0.3.1"
-    falzy "^0.20.0"
-    harden "^0.22.0"
-    khount "^0.1.0"
-    protype "^0.22.0"
-    truly "^0.19.0"
-
 ecc-jsbn@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
@@ -1199,12 +1183,6 @@ extglob@^0.3.1:
 extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
-
-falzy@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/falzy/-/falzy-0.20.0.tgz#3835232fb4c16702cfefd240e671381a13111de8"
-  dependencies:
-    babel-runtime "^6.23.0"
 
 fast-deep-equal@^1.0.0:
   version "1.0.0"
@@ -1621,12 +1599,6 @@ jsprim@^1.2.2:
     extsprintf "1.0.2"
     json-schema "0.2.3"
     verror "1.3.6"
-
-khount@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/khount/-/khount-0.1.0.tgz#c753b769d329f1f2f481cf6d12ed418edceb67b9"
-  dependencies:
-    babel-runtime "^6.23.0"
 
 kind-of@^3.0.2:
   version "3.2.2"
@@ -2060,12 +2032,11 @@ randombytes@^2.0.0, randombytes@^2.0.1:
   dependencies:
     safe-buffer "^5.1.0"
 
-raze@^0.32.0:
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/raze/-/raze-0.32.0.tgz#9d63d905e40f319e54dc7a4e7853e5cb2aeddbc1"
+raze@^0.33.0:
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.33.0.tgz#fd399e9104499fbd1061340d92b6cc14dbf0b6d7"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.29.0"
 
 rc@^1.1.7:
   version "1.2.1"

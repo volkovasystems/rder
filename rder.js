@@ -51,7 +51,6 @@
 
 	@include:
 		{
-			"doubt": "doubt",
 			"protype": "protype",
 			"raze": "raze",
 			"stringe": "stringe",
@@ -60,7 +59,6 @@
 	@end-include
 */
 
-const doubt = require( "doubt" );
 const protype = require( "protype" );
 const raze = require( "raze" );
 const stringe = require( "stringe" );
@@ -80,7 +78,7 @@ const rder = function rder( array, point ){
 		@end-meta-configuration
 	*/
 
-	if( !doubt( array, AS_ARRAY ) ){
+	if( typeof array != "object" ){
 		throw new Error( "invalid array" );
 	}
 

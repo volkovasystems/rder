@@ -51,16 +51,14 @@
               
               	@include:
               		{
-              			"doubt": "doubt",
               			"protype": "protype",
               			"raze": "raze",
               			"stringe": "stringe",
               			"truly": "truly"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
-var doubt = require("doubt");
 var protype = require("protype");
 var raze = require("raze");
 var stringe = require("stringe");
@@ -80,7 +78,7 @@ var rder = function rder(array, point) {
                                         	@end-meta-configuration
                                         */
 
-	if (!doubt(array, AS_ARRAY)) {
+	if ((typeof array === "undefined" ? "undefined" : (0, _typeof3.default)(array)) != "object") {
 		throw new Error("invalid array");
 	}
 

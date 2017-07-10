@@ -1,6 +1,5 @@
 yarn add \
 babel-runtime \
-doubt \
 protype \
 raze \
 stringe \
@@ -15,7 +14,6 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-doubt \
 protype \
 raze \
 stringe \
