@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Rder QUnit Example</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./rder.deploy.js"></script>
-</head>
+		<title>test:numric</title>
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test("ok test", function (assert) {
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+	</head>
 
-			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ),
-				{ "1": 0, "2": 1, "3": 2 }, "should be deeply equal" );
+	<body>
+		<div id="mocha"></div>
 
-		});
-	</script>
-</body>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
+		<script type="application/javascript">
+			mocha.setup( "bdd" );
+		</script>
+
+		<script type="application/javascript" src="./test.deploy.js"></script>
+
+		<script type="application/javascript">
+			mocha.run( );
+		</script>
+	</body>
 </html>

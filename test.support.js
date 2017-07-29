@@ -1,0 +1,10 @@
+"use strict";
+var assert = require("assert");
+var rder = require("./rder.js");
+
+assert.deepEqual(rder([1, 2, 3], "name"),
+{ "1": 0, "2": 1, "3": 2 }, "should be deeply equal");
+
+console.log("ok");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3Quc3VwcG9ydC5qcyJdLCJuYW1lcyI6WyJhc3NlcnQiLCJyZXF1aXJlIiwicmRlciIsImRlZXBFcXVhbCIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7QUFDQSxJQUFNQSxTQUFTQyxRQUFTLFFBQVQsQ0FBZjtBQUNBLElBQU1DLE9BQU9ELFFBQVMsV0FBVCxDQUFiOztBQUVBRCxPQUFPRyxTQUFQLENBQWtCRCxLQUFNLENBQUUsQ0FBRixFQUFLLENBQUwsRUFBUSxDQUFSLENBQU4sRUFBbUIsTUFBbkIsQ0FBbEI7QUFDQyxFQUFFLEtBQUssQ0FBUCxFQUFVLEtBQUssQ0FBZixFQUFrQixLQUFLLENBQXZCLEVBREQsRUFDNkIsd0JBRDdCOztBQUdBRSxRQUFRQyxHQUFSLENBQWEsSUFBYiIsImZpbGUiOiJ0ZXN0LnN1cHBvcnQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuY29uc3QgYXNzZXJ0ID0gcmVxdWlyZSggXCJhc3NlcnRcIiApO1xyXG5jb25zdCByZGVyID0gcmVxdWlyZSggXCIuL3JkZXIuanNcIiApO1xyXG5cclxuYXNzZXJ0LmRlZXBFcXVhbCggcmRlciggWyAxLCAyLCAzIF0sIFwibmFtZVwiICksXHJcblx0eyBcIjFcIjogMCwgXCIyXCI6IDEsIFwiM1wiOiAyIH0sIFwic2hvdWxkIGJlIGRlZXBseSBlcXVhbFwiICk7XHJcblxyXG5jb25zb2xlLmxvZyggXCJva1wiICk7XHJcbiJdfQ==
+//# sourceMappingURL=test.support.js.map
