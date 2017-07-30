@@ -1,0 +1,32 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-07-30T17:57:05.752Z",
+    "end": "2017-07-30T17:57:05.760Z",
+    "duration": 8
+  },
+  "tests": [
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "rder \"rder( [ 1, 2, 3 ], \"name\" )\" should be deeply equal",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "rder \"rder( [ 1, 2, 3 ], \"name\" )\" should be deeply equal",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
