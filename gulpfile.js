@@ -17,6 +17,11 @@ const negateServerPattern = /\/\/\:\s*\@\!server\:(.+?|[^]+?)\/\/\:\s*\@end\-ser
 const bridgePattern = /\/\/\:\s*\@bridge\:(.+?|[^]+?)\/\/\:\s*\@end\-bridge/gm;
 const negateBridgePattern = /\/\/\:\s*\@\!bridge\:(.+?|[^]+?)\/\/\:\s*\@end\-bridge/gm;
 
+const ignoreOpenPattern = /\/\/\:\s*\@ignore\:/gm;
+const ignoreOpenCommentPattern = /\/\/\:\s*\@ignore\:\s*\n\s*\/\*/gm;
+const ignoreClosePattern = /\/\/\:\s*\@end\-ignore/gm;
+const ignoreCloseCommentPattern = /\*\/\s*\n\s*\/\/\:\s*\@end\-ignore/gm;
+
 let parameter = yargs
 	.boolean( "client" )
 	.boolean( "server" )
@@ -77,9 +82,13 @@ gulp.task( "bridge", function formatBridge( ){
 		.pipe( replace( negateBridgePattern, "" ) )
 		.pipe( replace( serverPattern, "" ) )
 		.pipe( replace( clientPattern, "" ) )
+		.pipe( replace( ignoreOpenPattern, "//: @ignore:\n/*" ) )
+		.pipe( replace( ignoreClosePattern, "*/\n//: @end-ignore" ) )
 		.pipe( sourcemap.init( ) )
 		.pipe( babel( ) )
 		.pipe( sourcemap.write( "./" ) )
+		.pipe( replace( ignoreOpenCommentPattern, "//: @ignore:" ) )
+		.pipe( replace( ignoreCloseCommentPattern, "//: @end-ignore" ) )
 		.pipe( changed( "./", {
 			"hasChanged": changed.compareContents,
 		} ) )

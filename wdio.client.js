@@ -17,7 +17,7 @@ exports.config = {
 	"logLevel": "verbose",
 	"coloredLogs": true,
 	"bail": 0,
-	"screenshotPath": "./",
+	"screenshotPath": require( "os" ).tmpdir( ),
 	"baseUrl": "http://localhost",
 	"waitforTimeout": 1000,
 	"connectionRetryTimeout": 1000,
@@ -30,5 +30,7 @@ exports.config = {
 		"filename": "test.client",
 		"combined": true
 	},
-	"mochaOpts": { "ui": "bdd" }
+	"mochaOpts": {
+		"ui": "bdd"
+	}
 };
