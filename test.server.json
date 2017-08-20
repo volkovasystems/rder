@@ -5,15 +5,15 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2017-08-17T17:57:47.478Z",
-    "end": "2017-08-17T17:57:47.495Z",
-    "duration": 17
+    "start": "2017-08-20T02:46:22.920Z",
+    "end": "2017-08-20T02:46:22.934Z",
+    "duration": 14
   },
   "tests": [
     {
       "title": "should be deeply equal",
       "fullTitle": "rder \"rder( [ 1, 2, 3 ], \"name\" )\" should be deeply equal",
-      "duration": 8,
+      "duration": 7,
       "currentRetry": 0,
       "err": {}
     }
@@ -24,7 +24,7 @@
     {
       "title": "should be deeply equal",
       "fullTitle": "rder \"rder( [ 1, 2, 3 ], \"name\" )\" should be deeply equal",
-      "duration": 8,
+      "duration": 7,
       "currentRetry": 0,
       "err": {}
     }
