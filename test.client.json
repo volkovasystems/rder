@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-22T07:39:41.415Z",
+	"end": "2017-08-22T07:40:19.280Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "rder",
+			"duration": 0,
+			"start": "2017-08-22T07:40:19.004Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "rder",
+			"duration": 97,
+			"start": "2017-08-22T07:40:19.005Z",
+			"end": "2017-08-22T07:40:19.102Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-22T07:40:19.006Z",
+					"end": "2017-08-22T07:40:19.006Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "rder",
+					"associatedTest": "should be equal to { '1': 0, '2': 1, '3': 2 }"
+				},
+				{
+					"start": "2017-08-22T07:40:19.100Z",
+					"end": "2017-08-22T07:40:19.101Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "rder",
+					"associatedTest": "should be equal to { '1': 0, '2': 1, '3': 2 }"
+				},
+				{
+					"start": "2017-08-22T07:40:19.102Z",
+					"end": "2017-08-22T07:40:19.102Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "rder"
+				}
+			]
+		},
+		{
+			"name": "`rder( [ 1, 2, 3 ], 'name' )`",
+			"duration": 96,
+			"start": "2017-08-22T07:40:19.005Z",
+			"end": "2017-08-22T07:40:19.101Z",
+			"tests": [
+				{
+					"name": "should be equal to { '1': 0, '2': 1, '3': 2 }",
+					"start": "2017-08-22T07:40:19.005Z",
+					"end": "2017-08-22T07:40:19.100Z",
+					"duration": 95,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

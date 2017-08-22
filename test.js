@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const rder = require( "./rder.js" );
@@ -68,12 +68,11 @@ const rder = require( "./rder.js" );
 //: @server:
 
 describe( "rder", ( ) => {
-	
-	describe( `"rder( [ 1, 2, 3 ], "name" )"`, ( ) => {
-		it( "should be deeply equal", ( ) => {
 
-			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } 
-			);
+	describe( "`rder( [ 1, 2, 3 ], 'name' )`", ( ) => {
+		it( "should be equal to { '1': 0, '2': 1, '3': 2 }", ( ) => {
+
+			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } );
 
 		} );
 	} );
