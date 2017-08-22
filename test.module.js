@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const rder = require( "./rder.js" );
@@ -72,12 +72,11 @@ const path = require( "path" );
 //: @server:
 
 describe( "rder", ( ) => {
-	
-	describe( `"rder( [ 1, 2, 3 ], "name" )"`, ( ) => {
-		it( "should be deeply equal", ( ) => {
 
-			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } 
-			);
+	describe( "`rder( [ 1, 2, 3 ], 'name' )`", ( ) => {
+		it( "should be equal to { '1': 0, '2': 1, '3': 2 }", ( ) => {
+
+			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } );
 
 		} );
 	} );
@@ -88,18 +87,18 @@ describe( "rder", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "rder", ( ) => {
-	
-	describe( `"rder( [ 1, 2, 3 ], "name" )"`, ( ) => {
-		it( "should be deeply equal", ( ) => {
 
-			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } 
-			);
+	describe( "`rder( [ 1, 2, 3 ], 'name' )`", ( ) => {
+		it( "should be equal to { '1': 0, '2': 1, '3': 2 }", ( ) => {
+
+			assert.deepEqual( rder( [ 1, 2, 3 ], "name" ), { "1": 0, "2": 1, "3": 2 } );
 
 		} );
 	} );
+
 } );
 
 //: @end-client
@@ -107,6 +106,26 @@ describe( "rder", ( ) => {
 
 //: @bridge:
 
+describe( "rder", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`rder( [ 1, 2, 3 ], 'name' )`", ( ) => {
+		it( "should be equal to { '1': 0, '2': 1, '3': 2 }", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( rder( [ 1, 2, 3 ], "name" ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), { "1": 0, "2": 1, "3": 2 } );
+
+		} );
+	} );
+
+} );
 
 //: @end-bridge
